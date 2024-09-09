@@ -1,0 +1,30 @@
+<div class="w-50 mx-auto mt-5" style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      ">
+    <h4>Update Employee</h4>
+    <form class="w-50 mx-auto mt-2" action="/admin/update/<%=user.id%>" method="post">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" value="<%=user.name%>" />
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" value="<%=user.email%>" />
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="text" class="form-control" id="password" name="password" value="<%=user.password%>" />
+        </div>
+        <div class="mb-3">
+            <label for="admin" class="form-label">Is Admin</label>
+            <input type="text" class="form-control" id="admin" name="admin" value="<%=user.isAdmin%>" readonly />
+        </div>
+        <button class="btn btn-primary align-self-center">
+            Update Employee
+        </button>
+    </form>
+</div>

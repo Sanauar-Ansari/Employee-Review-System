@@ -1,0 +1,23 @@
+<form class="w-50 mx-auto mt-4 p-5" action="/admin/add-employee" method="post">
+    <div class="mb-3">
+        <h3>Add Employee</h3>
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="John Doe" required />
+    </div>
+
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="abc@email.com" name="email" required />
+    </div>
+
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" name="password" required />
+    </div>
+
+    <div class="mb-3">
+        <label for="confirmPassword" class="form-label">Confirm Password</label>
+        <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required />
+    </div>
+    <button class="btn btn-primary align-self-center">Create Employee</button>
+</form>

@@ -1,0 +1,61 @@
+<div class="d-flex justify-content-around text-center">
+    <div class="mt-5 pt-5">
+        <div class="mx-auto mt-3 p-3">
+            <h2>Assign Review to Employee</h2>
+        </div>
+
+        <div class="m-4 p-4">
+            <form action="/admin/assign-review" method="post">
+                <div class="mb-4">
+                    <h4>Employee</h4>
+                    <select class="form-select" name="employee">
+                        <!-- go through every user from req.user -->
+                        <% for(user of users){ %>
+                            <option value="<%= user.id %>">
+                                <%= user.name %>
+                            </option>
+                            <% } %>
+                    </select>
+                </div>
+
+                <div>
+                    <h4>Reviewer</h4>
+                    <select class="form-select" name="reviewer">
+                        <% for(user of users){ %>
+                            <option value="<%= user.id %>">
+                                <%= user.name %>
+                            </option>
+                            <% } %>
+                    </select>
+                </div>
+
+                <div>
+                    <button type="submit" class="btn btn-dark mt-5">Assign</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="vr"></div>
+    <div class="mt-5 pt-5">
+        <div class="mx-auto mt-3">
+            <h2>Make Admin</h2>
+        </div>
+
+        <div class="m-4 p-4">
+            <form action="/admin/make-admin" method="post">
+                <select class="form-select" aria-label="Default select example" name="adminName">
+                    <% for(user of users){ %>
+                        <option value="<%= user.id %>">
+                            <%= user.name %>
+                        </option>
+                        <% } %>
+                </select>
+                <div class="mt-5">
+                    <button type="submit" class="btn-sm btn-dark">
+                        Make Admin
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
