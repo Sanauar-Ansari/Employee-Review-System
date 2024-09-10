@@ -32,6 +32,6 @@ The Employee Review System is a web-based application designed to streamline the
 # Technologies Used:
 + Backend: Node.js, Express.js
 + Database: MongoDB (NoSQL database for storing employee and review data)
-  + Frontend: (If applicable) HTML, CSS, JavaScript, React.js (optional for more dynamic UIs)
++ Frontend: (If applicable) HTML, CSS, JavaScript, React.js (optional for more dynamic UIs)
 + Authentication: JWT (JSON Web Tokens) for secure authentication and session management
 + Version Control: Git for source code management
