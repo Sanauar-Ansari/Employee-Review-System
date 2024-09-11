@@ -1,6 +1,6 @@
 <div class="w-50 border border-dark mx-auto mt-5">
   <div class="mx-auto mt-3 mb-3" style="width: 200px">
-    <h4>Employee Sign In</h4>
+    <h4>Guest Sign In</h4>
   </div>
 
   <form class="w-50 mx-auto" action="/employee/create-session" method="POST">
@@ -12,6 +12,7 @@
         id="email"
         placeholder="abc@email.com"
         name="email"
+        value="admin@gmail.com"
         required
       />
     </div>
@@ -23,6 +24,7 @@
         class="form-control"
         id="password"
         name="password"
+        value="123456789"
         required
       />
     </div>
@@ -34,8 +36,6 @@
 
   <div class="mx-auto mb-3 mt-3" style="width: 300px">
     <a href="/employee/signup" style="margin-left: 90px">New here? Sign Up</a>
-    <a href="/employee/guestSignin" style="margin-left: 90px"
-      >Login as a guest</a
-    >
+    <!-- <a href="/employee/signup" style="margin-left: 90px">Login as a guest</a> -->
   </div>
 </div>
